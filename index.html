@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Spotify Layout</title>
+  <title>Spotify Replica</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="/mnt/data/favicon.ico" />
 </head>
 <body>
   <div class="container">
@@ -16,31 +15,32 @@
       </div>
       <nav class="menu">
         <ul>
-          <li><img src="img/home.svg" alt="Home"> Home</li>
-          <li><img src="img/search.svg" alt="Search"> Cerca</li>
-          <li><img src="img/libreria.svg" alt="Library"> La tua libreria</li>
+          <li class="active"><img src="img/home.svg" alt=""> Home</li>
+          <li><img src="img/search.svg" alt=""> Cerca</li>
+          <li><img src="img/libreria.svg" alt=""> La tua libreria</li>
         </ul>
       </nav>
       <div class="playlist">
-        <p>Playlist</p>
+        <p>PLAYLIST</p>
         <button>+ Crea Playlist</button>
         <ul>
+          <li>Nome Playlist</li>
           <li>Nome Playlist</li>
           <li>Nome Playlist</li>
         </ul>
       </div>
       <div class="user">
-        <img src="img/profile.svg" alt="Profilo" />
+        <img src="img/profile.svg" alt="Profile" />
         <p>John Doe</p>
       </div>
     </aside>
 
-    <!-- Main content -->
+
     <main class="main-content">
       <header class="top-nav">
         <nav>
           <ul>
-            <li>IN EVIDENZA</li>
+            <li class="active">IN EVIDENZA</li>
             <li>PODCAST</li>
             <li>CLASSIFICHE</li>
             <li>GENERI E MOOD</li>
@@ -51,33 +51,46 @@
         <button class="upgrade">EFFETTUA L’UPGRADE</button>
       </header>
 
-      <!-- Recently Played -->
-      <section class="section recently-played">
+      <section class="section">
         <h2>Recently played</h2>
         <div class="card-row">
-          <div class="card"><img src="img/stranger.jpeg" alt=""><p>Stranger Things</p></div>
-          <div class="card"><img src="img/aquietplace.jpeg" alt=""><p>A Quiet Place</p></div>
-          <div class="card"><img src="img/split.jpeg" alt=""><p>Split</p></div>
-          <div class="card"><img src="img/cure.jpeg" alt=""><p>A Cure for Wellness</p></div>
-          <div class="card"><img src="img/sinister.jpeg" alt=""><p>Sinister</p></div>
-          <div class="card"><img src="img/youg.jpeg" alt=""><p>Lana Del Rey</p></div>
+          <div class="card"><img src="img/stranger.jpeg" alt=""><p>Stranger Things</p><p class="card-subtitle">Kyle Dixon & Michael Stein</p></div>
+          <div class="card"><img src="img/aquietplace.jpeg" alt=""><p>A Quiet Place</p><p class="card-subtitle">Subtitle</p></div>
+          <div class="card"><img src="img/split.jpeg" alt=""><p>Split</p><p class="card-subtitle">Subtitle</p></div>
+          <div class="card"><img src="img/cure.jpeg" alt=""><p>A Cure for Wellness</p><p class="card-subtitle">Subtitle</p></div>
+          <div class="card"><img src="img/sinister.jpeg" alt=""><p>Sinister</p><p class="card-subtitle">Subtitle</p></div>
         </div>
       </section>
 
-      <!-- Made For -->
-      <section class="section made-for">
+      <section class="section">
         <h2>Creato per John Doe</h2>
+        <p class="description">Più ascolti, più accurati saranno i suggerimenti.</p>
         <div class="card-row">
-          <div class="card"><img src="img/radar.jpeg" alt=""><p>Release Radar</p></div>
-          <div class="card"><img src="img/einaudi.jpeg" alt=""><p>Daily Mix 1</p></div>
+          <div class="card"><img src="img/radar.jpeg" alt=""><p>Il tuo Release Radar</p><p class="card-subtitle">Release Radar</p></div>
+          <div class="card"><img src="img/einaudi.jpeg" alt=""><p>Il tuo Daily Mix 1</p><p class="card-subtitle">Daily Mix 1</p></div>
         </div>
       </section>
     </main>
   </div>
 
+  
   <footer class="player">
     <img src="img/player_left.jpg" alt="Now Playing" class="player-img">
-    <p>Player in basso</p>
+    <div class="track-info">
+      <p class="track-title">Sinister</p>
+      <p class="card-subtitle">Brano Nome</p>
+    </div>
+    <div class="player-controls">
+      <span>⏮</span>
+      <span>⏯</span>
+      <span>⏭</span>
+      <span>🔁</span>
+    </div>
+    <div class="progress">
+      <span class="timestamp">0:25</span>
+      <div class="bar"><div class="fill" style="width: 20%;"></div></div>
+      <span class="timestamp">4:35</span>
+    </div>
   </footer>
 </body>
 </html>
