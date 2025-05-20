@@ -296,3 +296,40 @@ html, body {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
+@media (max-width: 768px) {
+  .sidebar {
+    width: 72px;
+    padding: 20px 10px;
+    align-items: center;
+  }
+
+  .menu li span,
+  .playlist p,
+  .playlist button,
+  .playlist li span,
+  .user p {
+    display: none;
+  }
+
+  .menu ul,
+  .playlist ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li,
+  .playlist li,
+  .user {
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 40px;
+    height: auto;
+  }
+
+  .user {
+    flex-direction: column;
+  }
+}
